@@ -67,4 +67,4 @@ $(document).ready ->
   $.get "tap-hunter.php", (data) ->
     console.log data
     setupPagination data
-  setInterval(timer, 3000)
+  setInterval(timer(), 3000)
