@@ -21,7 +21,6 @@ setupList = (pageNumber) ->
   end = start + itemsPerPage
   end = (if ((items.length - 1) < end) then (items.length - 1) else end)
   paginatedItems = items.slice(start, end)
-  console.log paginatedItems
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
     $elem = $("#template").clone()
@@ -50,6 +49,8 @@ setupPagination = (data) ->
       setupList pageNumber
       console.log 'hello'
       return
+timer = () ->
+  $('.next').click
 
 
 $(document).ready ->
@@ -58,3 +59,4 @@ $(document).ready ->
     console.log data
     setupPagination data
     return
+  setTimeout(timer, 1000)
