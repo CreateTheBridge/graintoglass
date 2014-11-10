@@ -61,8 +61,7 @@ timerZ = () ->
     console.log 'done'
     clickCount = null
   else
-    $('#pagination').find('next').click
-
+    $('#pagination').find('.next').click()
 
 
 $(document).ready ->
