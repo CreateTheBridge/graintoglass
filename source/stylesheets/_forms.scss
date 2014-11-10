@@ -1,0 +1,57 @@
+// Forms
+%input {
+  color: $form-color;
+  background-color: $form-background-color;
+  border: 1px solid $form-border-color;
+  box-shadow: $form-box-shadow;
+  border-radius: $round-edges;
+
+  &:hover {
+    border: 1px solid $form-border-color-hover;
+  }
+
+  &:focus {
+    box-shadow: $form-box-shadow;
+    background-color: $form-background-color-focus;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $placeholder-text-color;
+  }
+
+  :-moz-placeholder {
+    color: $placeholder-text-color;
+  }
+
+  ::-moz-placeholder {
+    color: $placeholder-text-color;
+  }
+
+  :-ms-input-placeholder {
+    color: $placeholder-text-color;
+  }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea  {
+  @extend %input;
+}
+
+input[type="checkbox"] {
+  margin: 0 1em 0 0;
+}
+
+label {
+  padding-bottom: 0.75em;
+  font-weight: $label-weight;
+  color: $label-color;
+
+  abbr {
+    display: none;
+  }
+}

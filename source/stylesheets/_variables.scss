@@ -1,0 +1,101 @@
+// Colors
+$off-white: #f1f1f1;
+$gray: #ccc;
+$light-blue: #3598dc;
+$light-green: #2ab292;
+$light-gray: #999;
+$medium-gray: #666;
+$dark-gray: #333;
+$dark-blue: #22313F;
+$green: #3FC380;
+$red: #D24D57;
+$yellow: #f1c205;
+$orange: #f08a24;
+
+// Backgrounds
+$body-background-color: white;
+
+// Typography
+$font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-weight: normal;
+$header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-weight: normal;
+$font-color: $medium-gray;
+$header-font-color: $dark-gray;
+
+// Buttons
+$button-background-color: $light-green;
+$button-background-color-hover: scale_color($button-background-color, $lightness: -20%);
+$button-border: none;
+$button-border-color: none;
+$button-border-color-hover: none;
+$button-color: white;
+$button-color-hover: white;
+$button-font-size: rem-calc(14);
+
+// Links
+$link-color: $light-blue;
+$link-color-hover: scale_color($link-color, $lightness: -20%);
+
+// Forms
+$label-weight: 200;
+$label-color: $dark-gray;
+$form-color: $medium-gray;
+$form-background-color: white;
+$form-background-color-focus: $off-white;
+$form-box-shadow: none;
+$form-border-color: #ccc;
+$form-border-color-hover: scale_color($form-border-color, $lightness: -20%);
+$placeholder-text-color: $light-gray;
+
+// Lists
+$list-item-background-color: white;
+$list-item-background-color-odd: scale_color($list-item-background-color, $lightness: -3%);
+
+// Borders
+$round-edges: rem-calc(3);
+$border-color: $light-green;
+
+// Flashes
+$alert-background-color: $red;
+$alert-border-color: $alert-background-color;
+$success-background-color: $green;
+$success-border-color: $success-background-color;
+$warning-background-color: $orange;
+$warning-border-color: $warning-background-color;
+$close-color: white;
+
+// States
+$state-color: white;
+$state-green-background-color: $green;
+$state-yellow-background-color: $yellow;
+$state-red-background-color: $red;
+
+//icons
+$icon-color: $gray;
+$icon-color-hover: scale_color($icon-color, $lightness: -20%);
+
+// Navigations
+$sidebar-width: rem-calc(260);
+$sidebar-background-color: $dark-blue;
+$sidebar-color: white;
+$sidebar-color-hover: scale_color($sidebar-color, $lightness: -20%);
+$sidebar-color-active: scale_color($sidebar-color, $lightness: -30%);
+
+$small-sidebar-width: rem-calc(70);
+$small-sidebar-background-color: $dark-blue;
+$small-sidebar-color: white;
+$small-sidebar-color-hover: scale_color($sidebar-color, $lightness: -20%);
+$small-sidebar-color-active: scale_color($sidebar-color, $lightness: -30%);
+
+$topbar-background-color: $dark-blue;
+$topbar-background-color-hover: scale_color($topbar-background-color, $lightness: 5%);
+$topbar-color: white;
+$topbar-color-hover: scale_color($topbar-color, $lightness: -20%);
+
+// Plans
+$plan-background-color: $dark-blue;
+$plan-title-background-color: $dark-blue;
+$plan-price-background-color: scale_color($plan-background-color, $lightness: 5%);
+$plan-color: white;
+

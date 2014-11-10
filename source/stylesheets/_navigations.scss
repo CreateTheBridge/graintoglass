@@ -1,0 +1,194 @@
+// Sidebar
+%sidebar {
+  height: 100%;
+  width: $sidebar-width;
+  background: $sidebar-background-color;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+%wrapper {
+  margin-left: -$sidebar-width;
+  position: fixed;
+  left: $sidebar-width;
+}
+
+.sidebar-wrapper {
+  @extend %sidebar;
+  @extend %wrapper;
+}
+
+.sidebar {
+  @extend %sidebar;
+
+  h3 {
+    color: $off-white;
+  }
+
+  li {
+
+    &:first-child {
+      padding: 1em;
+    }
+
+    &.active {
+      background-color: scale_color($sidebar-background-color, $lightness: 3%);
+    }
+
+    a {
+      margin: 0;
+      padding: 1em 1em;
+      display: block;
+      color: $sidebar-color;
+
+      &:hover {
+        color: $sidebar-color-hover;
+      }
+
+      &.active {
+        color: $sidebar-color-active;
+      }
+
+    }
+  }
+}
+
+// Small Sidebar
+%small-sidebar  {
+  @extend %sidebar;
+  width: $small-sidebar-width;
+  background: $small-sidebar-background-color;
+}
+
+%small-wrapper {
+  @extend %wrapper;
+  margin-left: -$small-sidebar-width;
+  left: $small-sidebar-width;
+}
+
+.small-sidebar-wrapper {
+  @extend %small-sidebar;
+  @extend %small-wrapper;
+}
+
+.small-sidebar {
+  @extend %small-sidebar;
+
+  li {
+
+    &:first-child {
+      padding: 1em;
+    }
+
+    &.active {
+      background-color: scale_color($small-sidebar-background-color, $lightness: 5%);
+    }
+
+    a {
+      margin: 0;
+      padding: 1em 1em;
+      text-align: center;
+      display: block;
+      color: $small-sidebar-color;
+
+      &:hover {
+        color: $small-sidebar-color-hover;
+      }
+
+      &.active {
+        color: $small-sidebar-color-active;
+      }
+
+    }
+  }
+}
+
+.top-navigation-container {
+  height: 3.45em;
+  width: 100%;
+  position: fixed;
+  background-color: $dark-blue;
+  text-align: left;
+  z-index: 100;
+}
+
+.logo {
+  display: inline-block;
+  color: white;
+  padding: 1em;
+}
+
+// Top Navigation
+nav.top-navigation {
+  padding: 1em 0em 1em 1em;
+  position: relative;
+  float: right;
+  overflow: visible;
+
+  li {
+    display: inline-block;
+    padding: 0 1em;
+  }
+
+  i {
+    padding-left: 0.5em;
+  }
+
+  &:hover {
+    color: $dark-blue;
+
+    i {
+      color: $dark-blue;
+    }
+
+    .sub-navigation {
+      display: block;
+      top: 3em;
+
+      a {
+        padding: 0.5em;
+        width: 14rem;
+        display: block;
+        color: $topbar-color;
+        background-color: $topbar-background-color;
+        text-align: center;
+
+        &:hover {
+          color: $topbar-color-hover;
+          background-color: scale_color($topbar-background-color, $lightness: 5%);
+        }
+      }
+    }
+  }
+
+}
+
+// Top nav hover menu
+ul.sub-navigation {
+  display: none;
+  padding-left: 0;
+  position: absolute;
+}
+
+// Remove padding-left when sidebars not visible
+//@media only screen and (min-width: 64.063em) {
+//  main {
+//    width: 100%;
+//    @if $sidebar-width > 0 {
+//      padding-left: $sidebar-width;
+//    }
+//    @else {
+//      padding-left: $small-sidebar-width;
+//    }
+//  }
+//}
+
+// Full height offcanvas
+.off-canvas-wrap, .inner-wrap {
+  min-height: 100%;
+}
+
+.off-canvas-wrap {
+  height: 100%;
+  overflow-y: auto;
+}
