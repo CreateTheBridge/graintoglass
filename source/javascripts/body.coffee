@@ -50,9 +50,9 @@ setupPagination = (data) ->
     cssStyle: "light-theme"
     onPageClick: (pageNumber) ->
       setupList pageNumber
+      console.log 'hello'
       return
 
-  return
 
 $(document).ready ->
   preloadImages()
@@ -60,5 +60,3 @@ $(document).ready ->
     console.log data
     setupPagination data
     return
-
-  return
