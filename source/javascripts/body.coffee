@@ -19,8 +19,9 @@ preloadImages = ->
 setupList = (pageNumber) ->
   start = itemsPerPage * (pageNumber - 1)
   end = start + itemsPerPage
-  end = (if ((items.length - 1) < end) then (items.length - 1) else console.log('hi') end)
+  end = (if ((items.length - 1) < end) then (items.length - 1) else end)
   paginatedItems = items.slice(start, end)
+  console.log paginatedItems
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
     $elem = $("#template").clone()
