@@ -21,8 +21,6 @@
     .off-canvas-wrap{data: { offcanvas: ''}}
       .inner-wrap
         %main.main{role: 'main'}
-          -#= partial 'components/navigation'
           = yield
-          = partial 'components/footer'
 
     = javascript_include_tag 'body', defer: true
