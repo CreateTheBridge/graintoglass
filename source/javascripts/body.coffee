@@ -5,6 +5,7 @@
 items = null
 itemCount = 0
 itemsPerPage = 3
+itemPages = 0
 glassImages =
 #  tulip: "tulip.png"
 #  snifter: "snifter.png"
@@ -41,6 +42,8 @@ setupPagination = (data) ->
   itemCount = data.length
   items = data
   setupList 1, data
+  itemPages = (itemCount / itemsPerPage )
+  console.log itemPages
   $("#pagination").pagination
     items: itemCount
     itemsOnPage: itemsPerPage
