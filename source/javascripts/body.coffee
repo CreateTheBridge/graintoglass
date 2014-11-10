@@ -6,6 +6,7 @@ items = null
 itemCount = 0
 itemsPerPage = 3
 itemPages = 0
+clickCount = null
 glassImages =
 #  tulip: "tulip.png"
 #  snifter: "snifter.png"
@@ -50,18 +51,15 @@ setupPagination = (data) ->
     cssStyle: "light-theme"
     onPageClick: (pageNumber) ->
       setupList pageNumber
-      console.log 'hello'
+      clickCount++
       return
-timer = () ->
-  $('#pagination').find('.next').click ->
-    count = (count + 1)
-#  count = null
-#  if count == itemPages
-#    console.log 'done'
-#    count = null
-#  else
-#    $('#pagination').find('.next').click ->
-#      count = (count + 1)
+timerZ = () ->
+  if clickCount == itemPages
+    console.log 'done'
+    clickCount = null
+  else
+    $('#pagination').find('.next').click
+
 
 
 $(document).ready ->
@@ -69,4 +67,4 @@ $(document).ready ->
   $.get "tap-hunter.php", (data) ->
     console.log data
     setupPagination data
-  setInterval timer, 3000
+    setInterval timerZ, 3000
