@@ -42,7 +42,7 @@ setupPagination = (data) ->
   itemCount = data.length
   items = data
   setupList 1, data
-  itemPages = (itemCount / itemsPerPage )
+  itemPages = Math.ceil( itemCount / itemsPerPage )
   console.log itemPages
   $("#pagination").pagination
     items: itemCount
@@ -53,7 +53,13 @@ setupPagination = (data) ->
       console.log 'hello'
       return
 timer = () ->
-  $('.next').click
+  count = null
+  if count == itemPages
+    console.log 'done'
+    count = null
+  else
+    $('.next').click ->
+      count = count + 1
 
 
 $(document).ready ->
@@ -62,4 +68,4 @@ $(document).ready ->
     console.log data
     setupPagination data
     return
-  setTimeout(timer, 1000)
+  setInterval(timer, 3000)
