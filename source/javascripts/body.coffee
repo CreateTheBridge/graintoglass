@@ -54,21 +54,13 @@ setupPagination = (data) ->
       clickCount++
       return
 timerZ = () ->
+  console.log 'timerz fired'
   if clickCount == itemPages
     console.log 'done'
     clickCount = null
   else
     $('#pagination').find('.next').click
-try1 = ->
-  setInterval timerZ, 3000
-foobar = () ->
-  setTimeout (->
 
-    # trigger callback after 1000ms
-    try1()
-    return
-  ), 1000
-  return
 
 
 $(document).ready ->
@@ -76,4 +68,4 @@ $(document).ready ->
   $.get "tap-hunter.php", (data) ->
     console.log data
     setupPagination data
-  foobar()
+  setInterval timerZ, 3000
