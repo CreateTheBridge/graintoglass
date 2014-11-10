@@ -15,12 +15,11 @@ preloadImages = ->
   for k of glassImages
     img = new Image()
     img.src = glassImages[k]
-  return
 
 setupList = (pageNumber) ->
   start = itemsPerPage * (pageNumber - 1)
   end = start + itemsPerPage
-  end = (if ((items.length - 1) < end) then (items.length - 1) else end)
+  end = (if ((items.length - 1) < end) then (items.length - 1) else console.log('hi') end)
   paginatedItems = items.slice(start, end)
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
@@ -37,8 +36,6 @@ setupList = (pageNumber) ->
     $elem.removeAttr "id"
     $("#beer-list").append $elem
     return
-
-  return
 
 setupPagination = (data) ->
   itemCount = data.length
