@@ -55,7 +55,8 @@ setupPagination = (data) ->
       return
 timerZ = () ->
   console.log 'timerz fired'
-  console.log clickCount + itemPages
+  console.log clickCount
+  console.log itemPages
   if clickCount == itemPages
     console.log 'done'
     clickCount = null
