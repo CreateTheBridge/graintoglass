@@ -4,7 +4,7 @@
 
 items = null
 itemCount = 0
-itemsPerPage = 8
+itemsPerPage = 3
 glassImages =
 #  tulip: "tulip.png"
 #  snifter: "snifter.png"
