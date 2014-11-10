@@ -51,9 +51,9 @@ setupPagination = (data) ->
     cssStyle: "light-theme"
     onPageClick: (pageNumber) ->
       setupList pageNumber
-      clickCount++
       return
 timerZ = () ->
+  clickCount++
   console.log 'timerz fired'
   console.log clickCount
   console.log itemPages
