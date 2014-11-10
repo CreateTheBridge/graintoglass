@@ -59,7 +59,7 @@ timer = () ->
     count = null
   else
     $('#pagination').find('.next').click ->
-      console.log 'clicked'
+      count = (count + 1)
 
 
 $(document).ready ->
