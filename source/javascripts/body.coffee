@@ -53,13 +53,15 @@ setupPagination = (data) ->
       console.log 'hello'
       return
 timer = () ->
-  count = null
-  if count == itemPages
-    console.log 'done'
-    count = null
-  else
-    $('#pagination').find('.next').click ->
-      count = (count + 1)
+  $('#pagination').find('.next').click ->
+    count = (count + 1)
+#  count = null
+#  if count == itemPages
+#    console.log 'done'
+#    count = null
+#  else
+#    $('#pagination').find('.next').click ->
+#      count = (count + 1)
 
 
 $(document).ready ->
