@@ -57,11 +57,12 @@ timerZ = () ->
   console.log 'timerz fired'
   console.log clickCount
   console.log itemPages
-  if clickCount == itemPages
-    console.log 'done'
-    clickCount = null
-  else
-    $('#pagination').find('.next').click()
+  $('#pagination').find('.next').click()
+#  if clickCount == itemPages
+#    console.log 'done'
+#    clickCount = null
+#  else
+#    $('#pagination').find('.next').click()
 
 
 $(document).ready ->
