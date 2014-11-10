@@ -60,6 +60,7 @@ timerZ = () ->
   if (clickCount == itemPages)
     console.log 'done'
     clickCount = null
+    $('#pagination').pagination 'selectPage', 1
   else
     $('#pagination').find('.next').click()
 
