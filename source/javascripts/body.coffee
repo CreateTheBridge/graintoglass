@@ -58,8 +58,7 @@ timer = () ->
     console.log 'done'
     count = null
   else
-    $('.next').click ->
-      count = count + 1
+    $('.next').click
 
 
 $(document).ready ->
