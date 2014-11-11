@@ -4,7 +4,7 @@
 
 items = null
 itemCount = 0
-itemsPerPage = 3
+itemsPerPage = 8
 itemPages = 0
 clickCount = null
 glassImages =
