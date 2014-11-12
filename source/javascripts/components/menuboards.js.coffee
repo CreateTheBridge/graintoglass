@@ -61,6 +61,7 @@ setupList = (pageNumber) ->
       console.log 'is a pint'
       $elem.find(".beer-glass-image").attr "src", 'images/pint.png'
     else
+      console.log item.serving_info_sized_pricing.size
       console.log 'not a pint'
     if item.serving_info.sized_pricing.size == '64 oz Growler'
       $elem.find(".beer-glass-image-1").attr "src", 'images/growler.png'
