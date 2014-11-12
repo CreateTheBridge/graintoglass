@@ -20,13 +20,6 @@ body {
     padding-top:1em;
     padding-bottom:1em;
   }
-//  ul#beer-list {
-//    -webkit-columns: 2;
-//
-//    & li {
-//      padding-bottom: 1em;
-//    }
-//  }
 
   #template {
     display: none;
@@ -43,4 +36,9 @@ body {
   .grp3 > ul li.beer-style, .grp3 > ul li.beer-abv, .grp3 > ul li.beer-ibu {
     display: inline-block;
   }
+
+  .tap-number {
+    font-size: 3em;
+  }
+
 }
