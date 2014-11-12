@@ -22,7 +22,7 @@ setupList = (pageNumber) ->
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
     for own attr of this
-      console.log attr
+      if attr == undefined then attr = ''
     $elem = $("#template").clone()
     $elem.find(".beer-name").append '<span>' + item.beer.beer_name + '</span>'
     $elem.find(".beer-company-name").append '<span>' + item.brewery.name + '</span>'
