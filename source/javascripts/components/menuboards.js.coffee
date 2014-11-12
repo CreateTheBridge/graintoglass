@@ -48,7 +48,6 @@ setupList = (pageNumber) ->
     price = prices.join ' / '
     price = price.replace(' / ', ' ') if price.indexOf('/') == 1
 
-
     $elem.find(".beer-price").append '<span>' + price + '</span>'
     $elem.find(".beer-style").append '<span>' + item.beer.style + '</span>'
     $elem.find(".beer-abv").append '<span>' + 'ABV ' + item.beer.abv + '</span>'
@@ -56,7 +55,13 @@ setupList = (pageNumber) ->
     $elem.find(".brew-location").append '<span>' + item.brewery.origin + '</span>'
     size = item.serving_info.size.toLowerCase()
     image = glassImages[size]
-    $elem.find(".beer-glass-image").attr "src", image
+#   $elem.find(".beer-glass-image").attr "src", image
+
+    if item.serving_info.sized_pricing.size == 'Pint'
+      $elem.find(".beer-glass-image").append "<img src='images/pint.png'>"
+    if item.serving_info.sized_pricing.size == '64 oz Growler'
+      $elem.find(".beer-glass-image").append "<img src='images/growler.png'>"
+
     $elem.removeAttr "id"
     $("#beer-list").append $elem
     return
