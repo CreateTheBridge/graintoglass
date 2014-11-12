@@ -64,11 +64,32 @@
     padding: 6em 2em;
     background-color: #f9f9f9;
   }
-
-  #template {
-    display: none;
+  ul, li {
+    list-style: none;
   }
 
+  #template {
+//    display: none;
+
+    .grp1 > .beer-name, .grp1 > .beer-price {
+      display: inline-block;
+    }
+
+    .grp2 > .beer-company-name, .grp2 > .brew-location {
+      display: inline-block;
+    }
+
+    .grp3 > ul li.beer-style, .grp3 > ul li.beer-abv, .grp3 > ul li.beer-ibu {
+      display: inline;
+    }
+
+
+  }
+
+  background-color: black;
+  max-height: 100%;
+  overflow: hidden;
+  color: white;
 }
 
 .footer-container {

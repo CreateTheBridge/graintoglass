@@ -4,10 +4,10 @@ itemsPerPage = 8
 itemPages = 0
 clickCount = null
 glassImages =
-#  tulip: "tulip.png"
-#  snifter: "snifter.png"
-#  pint: "pint.png"
-#  growler: "growler.png"
+  tulip: "tulip.png"
+  snifter: "snifter.png"
+  pint: "pint.png"
+  growler: "growler.png"
 
   preloadImages = ->
     for k of glassImages
@@ -22,12 +22,13 @@ setupList = (pageNumber) ->
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
     $elem = $("#template").clone()
-    $elem.find(".beer-name").text item.beer.name
+    $elem.find(".beer-name").text item.beer.beer_name
     $elem.find(".beer-company-name").text item.brewery.name
     $elem.find(".beer-price").text item.serving_info.price
     $elem.find(".beer-style").text item.beer.style
     $elem.find(".beer-abv").text item.beer.abv
     $elem.find(".beer-ibu").text item.beer.ibu
+    $elem.find(".brew-location").text item.brewery.origin
     size = item.serving_info.size.toLowerCase()
     image = glassImages[size]
     $elem.find(".beer-glass-image").attr "src", image

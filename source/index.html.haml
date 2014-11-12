@@ -7,15 +7,44 @@ url: http://www.boilerplate.com
 ---
 
 %li.large-6.columns#template
-  %img.beer-glass-image
-  .beer-company-name
-  .beer-name
-  .beer-price
-  %ul
-    %li.beer-style
-    %li.beer-abv
-    %li.beer-ibu
+  .large-3.columns
+    %img.beer-glass-image
+  .large-9.columns.grp1
+    .beer-name
+    .beer-price
+  .large-9.columns.grp2
+    .beer-company-name
+    .brew-location
+  .large-9.columns.grp3
+    %ul
+      %li.beer-style
+      %li.beer-abv
+      %li.beer-ibu
 #beer-list-container
   #pagination
   %ul#beer-list
-
+-#.test
+-#  %li.large-6.columns#template
+-#    .large-3.columns
+-#      %img.beer-glass-image
+-#        = image_tag 'http://placehold.it/47x83c'
+-#        = image_tag 'http://placehold.it/63x124c'
+-#        %span 1
+-#    .large-9.columns.grp1
+-#      .beer-name
+-#        %span fancy beer name
+-#      .beer-price
+-#        %span 2.00
+-#    .large-9.columns.grp2
+-#      .beer-company-name
+-#        %span company name
+-#      .brew-location
+-#        %span buffalo, ny
+-#    .large-9.columns.grp3
+-#      %ul
+-#        %li.beer-style
+-#          %span beer style
+-#        %li.beer-abv
+-#          %span 3.5%
+-#        %li.beer-ibu
+-#          %span 30
