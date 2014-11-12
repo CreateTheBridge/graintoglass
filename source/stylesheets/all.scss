@@ -13,9 +13,9 @@ body {
 .index {
   ul {
 
-    columns: 2;
+    -webkit-columns: 2;
 
-    li {
+    & li {
       margin: 0 0;
       padding: 0 0;
     }
