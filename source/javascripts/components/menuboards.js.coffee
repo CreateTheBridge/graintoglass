@@ -26,8 +26,8 @@ setupList = (pageNumber) ->
     $elem.find(".beer-company-name").append '<span>' + item.brewery.name + '</span>'
     $elem.find(".beer-price").append '<span>' + item.serving_info.sized_pricing[0].price + ' / ' + item.serving_info.sized_pricing[1].price + '</span>'
     $elem.find(".beer-style").append '<span>' + item.beer.style + '</span>'
-    $elem.find(".beer-abv").append '<span>' + item.beer.abv + '</span>'
-    $elem.find(".beer-ibu").append '<span>' + item.beer.ibu + '</span>'
+    $elem.find(".beer-abv").append '<span>' + 'ABV ' + item.beer.abv + '</span>'
+    $elem.find(".beer-ibu").append '<span>' + 'IBU ' + item.beer.ibu + '</span>'
     $elem.find(".brew-location").append '<span>' + item.brewery.origin + '</span>'
     size = item.serving_info.size.toLowerCase()
     image = glassImages[size]
