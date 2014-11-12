@@ -77,7 +77,6 @@ setupPagination = (data) ->
   $("#pagination").pagination
     items: itemCount
     itemsOnPage: itemsPerPage
-#    cssStyle: "light-theme"
     onPageClick: (pageNumber) ->
       setupList pageNumber
       return
