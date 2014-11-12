@@ -60,10 +60,9 @@ setupList = (pageNumber) ->
     if item.serving_info.sized_pricing[0].size == 'Pint'
       console.log 'is a pint'
       $elem.find(".beer-glass-image").attr "src", 'images/pint.png'
-    else
-      console.log item.serving_info.sized_pricing.size
-      console.log 'not a pint'
-    if item.serving_info.sized_pricing.size == '64 oz Growler'
+    else if item.serving_info.sized_pricing[0].size == '64 oz Growler'
+      $elem.find(".beer-glass-image").attr "src", 'images/growler.png'
+    if item.serving_info.sized_pricing[1].size == '64 oz Growler'
       $elem.find(".beer-glass-image-1").attr "src", 'images/growler.png'
 
     $elem.removeAttr "id"
