@@ -6,34 +6,34 @@
 }
 
 body {
-//  background-color: black;
-//  color: white;
+  background-color: black;
+  color: white;
 }
 
 .index {
-//  ul, li {
-//    margin: 0 0;
-//    padding: 0 0;
-//  }
+  ul, li {
+    margin: 0 0;
+    padding: 0 0;
+  }
 
-//  .large-6 {
-//    padding-top: 1em;
-//    padding-bottom: 1em;
-//  }
+  .large-6 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 
   #template {
     display: none;
   }
 
-//  .grp1 > .beer-name, .grp1 > .beer-price {
-//    display: inline-block;
-//  }
-//
-//  .grp2 > .beer-company-name, .grp2 > .brew-location {
-//    display: inline-block;
-//  }
-//
-//  .grp3 > ul li.beer-style, .grp3 > ul li.beer-abv, .grp3 > ul li.beer-ibu {
-//    display: inline-block;
-//  }
+  .grp1 > .beer-name, .grp1 > .beer-price {
+    display: inline-block;
+  }
+
+  .grp2 > .beer-company-name, .grp2 > .brew-location {
+    display: inline-block;
+  }
+
+  .grp3 > ul li.beer-style, .grp3 > ul li.beer-abv, .grp3 > ul li.beer-ibu {
+    display: inline-block;
+  }
 }

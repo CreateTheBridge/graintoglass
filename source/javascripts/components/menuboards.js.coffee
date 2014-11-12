@@ -4,10 +4,10 @@ itemsPerPage = 8
 itemPages = 0
 clickCount = null
 glassImages =
-  tulip: "tulip.png"
-  snifter: "snifter.png"
-  pint: "pint.png"
-  growler: "growler.png"
+#  tulip: "tulip.png"
+#  snifter: "snifter.png"
+#  pint: "pint.png"
+#  growler: "growler.png"
 
 preloadImages = ->
   for k of glassImages
