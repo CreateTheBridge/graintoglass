@@ -11,17 +11,13 @@ body {
 }
 
 .index {
-  ul {
-
-    -webkit-columns: 2;
-
-    & li {
-      margin: 0 0;
-      padding: 0 0;
-    }
-
+  ul, li {
+    margin: 0 0;
+    padding: 0 0;
   }
-
+  ul {
+    -webkit-columns: 2;
+  }
   .large-6 {
     padding-top: 1em;
     padding-bottom: 1em;
