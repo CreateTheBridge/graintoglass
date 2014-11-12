@@ -89,4 +89,4 @@ $(document).ready ->
   $.get "tap-hunter.php", (data) ->
     console.log data
     setupPagination data
-  setInterval timerZ, 3000
+#  setInterval timerZ, 3000
