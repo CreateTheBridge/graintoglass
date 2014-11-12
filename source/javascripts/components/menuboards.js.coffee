@@ -21,7 +21,7 @@ setupList = (pageNumber) ->
   paginatedItems = items.slice(start, end)
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
-    if item.prop == undefined then ''
+    if item.prop == undefined else ''
     $elem = $("#template").clone()
     $elem.find(".beer-name").append '<span>' + item.beer.beer_name + '</span>'
     $elem.find(".beer-company-name").append '<span>' + item.brewery.name + '</span>'
