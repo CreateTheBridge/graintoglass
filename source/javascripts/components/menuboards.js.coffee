@@ -22,13 +22,13 @@ setupList = (pageNumber) ->
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
     $elem = $("#template").clone()
-    $elem.find(".beer-name").append '<span>' + item.beer.beer_name + '</span'
-    $elem.find(".beer-company-name").append '<span>' + item.brewery.name + '</span'
-    $elem.find(".beer-price").append '<span>' + item.serving_info.price + '</span'
-    $elem.find(".beer-style").append '<span>' + item.beer.style + '</span'
-    $elem.find(".beer-abv").append '<span>' + item.beer.abv + '</span'
-    $elem.find(".beer-ibu").append '<span>' + item.beer.ibu + '</span'
-    $elem.find(".brew-location").append '<span>' + item.brewery.origin + '</span'
+    $elem.find(".beer-name").append '<span>' + item.beer.beer_name + '</span>'
+    $elem.find(".beer-company-name").append '<span>' + item.brewery.name + '</span>'
+    $elem.find(".beer-price").append '<span>' + item.serving_info.price + '</span>'
+    $elem.find(".beer-style").append '<span>' + item.beer.style + '</span>'
+    $elem.find(".beer-abv").append '<span>' + item.beer.abv + '</span>'
+    $elem.find(".beer-ibu").append '<span>' + item.beer.ibu + '</span>'
+    $elem.find(".brew-location").append '<span>' + item.brewery.origin + '</span>'
     size = item.serving_info.size.toLowerCase()
     image = glassImages[size]
     $elem.find(".beer-glass-image").attr "src", image
