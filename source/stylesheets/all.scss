@@ -6,6 +6,13 @@
   padding-top: 55px;
 }
 
+body {
+  background-color: black;
+  max-height: 100%;
+  overflow: hidden;
+  color: white;
+}
+
 .index {
 
   #header {
@@ -85,11 +92,6 @@
 
 
   }
-
-  background-color: black;
-  max-height: 100%;
-  overflow: hidden;
-  color: white;
 }
 
 .footer-container {
