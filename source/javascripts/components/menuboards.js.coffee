@@ -9,10 +9,10 @@ glassImages =
   pint: "pint.png"
   growler: "growler.png"
 
-  preloadImages = ->
-    for k of glassImages
-      img = new Image()
-      img.src = glassImages[k]
+preloadImages = ->
+  for k of glassImages
+    img = new Image()
+    img.src = glassImages[k]
 
 setupList = (pageNumber) ->
   start = itemsPerPage * (pageNumber - 1)
