@@ -14,19 +14,17 @@ body {
 
   #template {
     display: none;
+  }
 
-    .grp1 > .beer-name, .grp1 > .beer-price {
-      display: inline-block;
-    }
+  .grp1 > .beer-name, .grp1 > .beer-price {
+    display: inline-block;
+  }
 
-    .grp2 > .beer-company-name, .grp2 > .brew-location {
-      display: inline-block;
-    }
+  .grp2 > .beer-company-name, .grp2 > .brew-location {
+    display: inline-block;
+  }
 
-    .grp3 > ul li.beer-style, .grp3 > ul li.beer-abv, .grp3 > ul li.beer-ibu {
-      display: inline;
-    }
-
-
+  .grp3 > ul li.beer-style, .grp3 > ul li.beer-abv, .grp3 > ul li.beer-ibu {
+    display: inline-block;
   }
 }
