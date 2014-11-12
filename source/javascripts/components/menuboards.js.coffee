@@ -58,9 +58,9 @@ setupList = (pageNumber) ->
 #   $elem.find(".beer-glass-image").attr "src", image
 
     if item.serving_info.sized_pricing.size == 'Pint'
-      $elem.find(".beer-glass-image").append "<img src='images/pint.png'>"
+      $elem.find(".beer-glass-image").attr "src", 'images/pint.png'
     if item.serving_info.sized_pricing.size == '64 oz Growler'
-      $elem.find(".beer-glass-image").append "<img src='images/growler.png'>"
+      $elem.find(".beer-glass-image-1").attr "src", 'images/growler.png'
 
     $elem.removeAttr "id"
     $("#beer-list").append $elem
