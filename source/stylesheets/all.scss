@@ -16,6 +16,11 @@ body {
     padding: 0 0;
   }
 
+  ul#beer-list {
+    -webkit-column-count: 2;
+    display: inherit;
+  }
+
   ul#beer-list > li {
     padding-top:1em;
     padding-bottom:1em;
