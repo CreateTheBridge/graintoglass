@@ -78,8 +78,6 @@ setupPagination = (data) ->
     items: itemCount
     itemsOnPage: itemsPerPage
 #    cssStyle: "light-theme"
-    prevText: ''
-    nextText: ''
     onPageClick: (pageNumber) ->
       setupList pageNumber
       return
