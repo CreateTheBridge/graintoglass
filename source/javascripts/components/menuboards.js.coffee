@@ -22,11 +22,12 @@ setupList = (pageNumber) ->
   $("#beer-list").empty()
   $.each paginatedItems, (i, item) ->
     for own attr, value of this
-      if value == undefined then value = ''
+      if value == undefined
+        console.log 'attr:' + attr + 'value:' + value
     $elem = $("#template").clone()
     $elem.find(".beer-name").append '<span>' + item.beer.beer_name + '</span>'
     $elem.find(".beer-company-name").append '<span>' + item.brewery.name + '</span>'
-    $elem.find(".beer-price").append '<span>' + item.serving_info.sized_pricing[0].price  + ' / ' + item.serving_info.sized_pricing[1].price + '</span>'
+#    $elem.find(".beer-price").append '<span>' + item.serving_info.sized_pricing[0].price  + ' / ' + item.serving_info.sized_pricing[1].price + '</span>'
     $elem.find(".beer-style").append '<span>' + item.beer.style + '</span>'
     $elem.find(".beer-abv").append '<span>' + 'ABV ' + item.beer.abv + '</span>'
     $elem.find(".beer-ibu").append '<span>' + 'IBU ' + item.beer.ibu + '</span>'
