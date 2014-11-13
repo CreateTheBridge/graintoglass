@@ -61,6 +61,8 @@ setupList = (pageNumber) ->
     for size in item.serving_info.sized_pricing
       if size.size == 'Pint'
         $elem.find(".pint-glass-image").attr "src", 'images/pint.png'
+      else if size.size == '10 oz'
+        $elem.find(".snifter-glass-image").attr "src", 'images/snifter.png'
       else if size.size == '64 oz Growler'
         $elem.find(".growler-glass-image").attr "src", 'images/growler.png'
 
