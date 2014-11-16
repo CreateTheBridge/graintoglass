@@ -17,7 +17,7 @@ preloadImages = ->
 setupList = (pageNumber) ->
   start = itemsPerPage * (pageNumber - 1)
   end = start + itemsPerPage
-  end = (if ((items.length - 1) < end) then (items.length - 1) else end)
+  end = (if ((items.length - 1) < end) then (items.length) else end)
   items.sort (a, b) ->
     tap_1 = -1
     tap_2 = -1
