@@ -1,58 +1,145 @@
-@import 'base';
+//@import 'base';
 
-%section-offset {
-  margin-top: -55px;
-  padding-top: 55px;
+@font-face {
+  font-family: 'Outage';
+  src: url('../fonts/Outage.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'Gotham Thin';
+  src: url('../fonts/GothamHTF-Thin.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
-body {
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url('../fonts/GothamHTF-Medium.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../fonts/GothamHTF-Black.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+html, body, main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.template {
+  display: none;
+}
+
+.top-bar {
+  width: 100%;
+  height: 150px;
   background-color: black;
-  color: white;
+
+  * {
+    float: left;
+  }
+
+  img {
+    margin: 15px 30px;
+  }
+
+  h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 400;
+    font-family: 'Outage';
+    line-height: 150px;
+    text-transform: uppercase;
+
+    margin: 0;
+  }
 }
 
-.index {
-  ul, li {
-    margin: 0 0;
-    padding: 0 0;
-  }
 
-  ul#beer-list {
-    -webkit-column-count: 2;
-    display: inherit;
-  }
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
-  ul#beer-list > li {
-    padding-top:1em;
-    padding-bottom:1em;
-  }
+  -webkit-column-count: 2;
+  -webkit-column-width: 50%;
+  -webkit-column-gap: 0;
+  -webkit-column-break-inside: avoid;
+  -webkit-columb-break-after: always;
 
-  #template {
-    display: none;
-  }
 
-  .grp1 > .beer-name, .grp1 > .beer-price {
-    display: inline-block;
-  }
+  li {
+    height: 116.5px;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    list-style: none;
 
-  .grp2 > .beer-company-name, .grp2 > .brew-location {
-    display: inline-block;
-  }
+    &:nth-child(even) {
+      background-color: #2d2d2d;
+    }
 
-  .grp3 > ul li.beer-style, .grp3 > ul li.beer-abv, .grp3 > ul li.beer-ibu {
-    display: inline-block;
-  }
+    * {
+      float: left;
+    }
 
-  .tap-number {
-    font-size: 3em;
-    color: red;
-  }
+    div {
+      padding: 16px 25px;
+    }
 
-  #headercontainer {
-    color: black;
-    background-color: red;
-  }
-  .next, .prev {
-    display: none;
-  }
+    .glass-image {
+      width: 125px;
+      height: 84.5px;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
 
+      img {
+        margin-top: 5px;
+        float: none;
+        height: 75px;
+        display: inline-block;
+      }
+    }
+
+    .tap-number {
+      text-align: center;
+      width: 88px;
+      height: 84.5px;
+
+      color: white;
+      line-height: 84px;
+      font-size: 72px;
+      font-family: 'Gotham Thin';
+
+      background-color: #1e1e1e;
+    }
+
+    .beer-information {
+      color: white;
+
+      * {
+        display: block;
+        float: none;
+
+        padding: 0;
+        margin: 6px 0;
+        font-size: 18px;
+        font-family: 'Gotham Medium';
+      }
+
+      &.new {
+        color: #93c945;
+      }
+
+      .beer-name-price {
+        font-weight: bold;
+        font-family: 'Gotham Black';
+      }
+    }
+  }
+}
+
+.growler-image {
+  margin-right: 6px;
 }

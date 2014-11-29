@@ -9,9 +9,7 @@ curl_setopt($curl_session, CURLOPT_CONNECTTIMEOUT, 4);
 curl_setopt($curl_session, CURLOPT_TIMEOUT, 10);
 $data = curl_exec($curl_session);
 curl_close($curl_session);
-
 echo $data;
-
 exit();
 
 ?>

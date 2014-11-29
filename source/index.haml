@@ -1,0 +1,44 @@
+---
+title: Grain to Glass
+description: A description of this page.
+keywords: Keywords.
+sitename: Site Name
+url: http://www.boilerplate.com
+---
+
+
+
+.top-bar
+  = image_tag 'images/logo.png'
+  %h1
+    What's on tap?
+
+  .right-section
+
+
+
+%li.template
+  .glass-image
+  .tap-number
+  .beer-information
+    .beer-name-price
+    .brewery
+    .origin
+
+
+
+
+%ul.beer-list
+  -#- for i in 1..16
+  -#  %li
+  -#    .glass-image
+  -#      = image_tag 'images/tulip.png'
+  -#    .tap-number
+  -#      = i
+  -#    .beer-information.new
+  -#      .beer-name-price
+  -#        Wasatch White Label $5.00
+  -#      .brewery
+  -#        Utah Brewers Cooperative
+  -#      .origin
+  -#        Witbier - 6.00% ABV

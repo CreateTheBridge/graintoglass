@@ -12,6 +12,7 @@
 compass_config do |config|
   # Require any additional compass plugins here.
   config.add_import_path 'bower_components/foundation/scss'
+  config.add_import_path 'bower_components/numeral'
   config.http_path = '/'
   config.css_dir = 'stylesheets'
   config.sass_dir = 'stylesheets'
@@ -69,9 +70,10 @@ set :images_dir, 'images'
 
 
 activate :livereload
+activate :php
 
 configure :build do
-
+  activate :php
   # activate :favicon_maker, :icons => {
   #     'favicon_template.png' => [
   #         { icon: "apple-touch-icon-152x152-precomposed.png" },

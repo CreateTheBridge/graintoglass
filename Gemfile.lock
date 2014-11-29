@@ -30,6 +30,11 @@ GEM
     compass-import-once (1.0.4)
       sass (>= 3.2, < 3.5)
     docile (1.1.5)
+    eco (1.0.0)
+      coffee-script
+      eco-source
+      execjs
+    eco-source (1.1.0.rc.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -100,6 +105,8 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (~> 3.2)
       rack-livereload (~> 0.3.15)
+    middleman-php (0.0.3)
+      middleman-core (>= 3.2.1)
     middleman-sprockets (3.3.3)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
@@ -127,6 +134,9 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.3)
       ffi (>= 0.5.0)
+    ruby-haml-js (0.0.5)
+      execjs
+      sprockets (>= 2.0.0)
     sass (3.2.19)
     sitemap_generator (5.0.4)
       builder
@@ -154,14 +164,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  eco
   middleman
   middleman-autoprefixer
   middleman-favicon-maker
   middleman-imageoptim
   middleman-livereload
   middleman-minify-html!
+  middleman-php
   puma
   rake
   rb-fsevent
   rb-inotify
+  ruby-haml-js
   sitemap_generator

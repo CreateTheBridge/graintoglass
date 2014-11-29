@@ -88,6 +88,7 @@ $small-sidebar-color: white;
 $small-sidebar-color-hover: scale_color($sidebar-color, $lightness: -20%);
 $small-sidebar-color-active: scale_color($sidebar-color, $lightness: -30%);
 
+$topbar-height: 100px;
 $topbar-background-color: $dark-blue;
 $topbar-background-color-hover: scale_color($topbar-background-color, $lightness: 5%);
 $topbar-color: white;

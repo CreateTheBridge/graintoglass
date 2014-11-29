@@ -18,9 +18,7 @@
 
 
   %body{class: page_classes}
-    .off-canvas-wrap{data: { offcanvas: ''}}
-      .inner-wrap
-        %main.main{role: 'main'}
-          = yield
+    %main.main{role: 'main'}
+      = yield
 
     = javascript_include_tag 'body', defer: true

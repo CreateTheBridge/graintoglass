@@ -3,12 +3,15 @@
 source 'http://rubygems.org'
 
 gem 'middleman'
+gem 'middleman-php'
 gem 'middleman-livereload'
 gem 'middleman-minify-html', :git => 'https://github.com/middleman/middleman-minify-html.git'
 gem 'middleman-imageoptim'
 gem 'middleman-favicon-maker'
 gem 'middleman-autoprefixer'
 gem 'sitemap_generator'
+gem 'eco'
+gem 'ruby-haml-js'
 gem 'puma'
 gem 'rake'
 
