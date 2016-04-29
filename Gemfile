@@ -12,7 +12,6 @@ gem 'middleman-autoprefixer'
 gem 'sitemap_generator'
 gem 'eco'
 gem 'ruby-haml-js'
-gem 'puma'
 gem 'rake'
 
 group :darwin do
