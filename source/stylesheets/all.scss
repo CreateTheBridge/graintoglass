@@ -126,6 +126,7 @@ ul {
         margin: 6px 0;
         font-size: 18px;
         font-family: 'Gotham Medium';
+        line-height: 20px;
       }
 
       &.new {
@@ -133,8 +134,11 @@ ul {
       }
 
       .beer-name-price {
-        font-weight: bold;
+        // font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         font-family: 'Gotham Black';
+        font-size: 15pt;
       }
     }
   }

@@ -2,7 +2,7 @@
 
 header("content-type:application/json");
 
-$url = 'http://mcallen.taphunter.com/widgets/locationWidget?location=Grain-To-Glass&format=jsonv2short';
+$url = 'https://www.taphunter.com/widgets/location/v3/5902362478641152.json';
 $curl_session = curl_init($url);
 curl_setopt($curl_session, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl_session, CURLOPT_CONNECTTIMEOUT, 4);
