@@ -155,7 +155,10 @@ parse_iso_date = (dtstr) ->
 
 fetch_beer_list = (page = 1) ->
   $.get 'tap-hunter.php', (data) ->
-    json_data = JSON.parse(data)
+    if typeof data is 'string'
+      json_data = JSON.parse(data)
+    else
+      json_data = data
     json_data.taps.sort (a, b) ->
       tap_1 = -1
       tap_2 = -1
